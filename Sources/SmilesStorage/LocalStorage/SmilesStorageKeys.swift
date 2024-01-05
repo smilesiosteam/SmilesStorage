@@ -16,5 +16,7 @@ public enum SmilesStorageKeys: String {
     case notificationToken = "NotificationToken"
     case selectedLanguage = "CurrentAppLanguage"
     case defaultLanguage = "LanguageManagerDefaultLanguage"
+    case isAutomaticallyDetectLocationPopUpShown
+    case automaticallyDetectPopUpShownDate
     
 }
