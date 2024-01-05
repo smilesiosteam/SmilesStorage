@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import UIKit
 
 public enum SmilesStorageType {
     case keychain
@@ -20,7 +19,7 @@ public final class SmilesStorageHandler {
     public init(storageType: SmilesStorageType) {
         switch storageType {
         case .keychain:
-            self.storage = SmilesKeychain()
+            self.storage = SmilesKeychain.shared
         case .userDefaults:
             self.storage = UserDefaults.standard
         }
