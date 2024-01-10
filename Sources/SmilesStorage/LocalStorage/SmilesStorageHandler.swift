@@ -19,7 +19,7 @@ public final class SmilesStorageHandler {
     public init(storageType: SmilesStorageType) {
         switch storageType {
         case .keychain:
-            self.storage = SmilesKeychain.shared
+            self.storage = SmilesKeychain()
         case .userDefaults:
             self.storage = UserDefaults.standard
         }

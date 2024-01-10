@@ -9,11 +9,6 @@ import Security
 import Foundation
 
 final class SmilesKeychain {
-    static let shared = SmilesKeychain()
-    
-    private init() {
-        
-    }
     
     func set(_ data: Data, forKey: String) {
         deleteData(forKey: forKey)
